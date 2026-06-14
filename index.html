@@ -19,8 +19,8 @@
   @font-face{font-family:'Garet';src:local('Garet Medium'),url('assets/fonts/Garet-Medium.woff2') format('woff2');font-weight:500;font-display:swap}
   @font-face{font-family:'Garet';src:local('Garet Heavy'),local('Garet Bold'),url('assets/fonts/Garet-Heavy.woff2') format('woff2');font-weight:600 800;font-display:swap}
   :root{
-    --ink:#111111;--graphite:#4A4A4A;--blue:#18365D;--blue-700:#1F4A7A;
-    --accent:#2D6CDF;--blue-50:#EEF3FA;--white:#fff;--bg:#F7F8FA;--border:#E6E9EE;--muted:#6B7480;
+    --ink:#111111;--graphite:#4A4A4A;--blue:#111111;--blue-700:#000000;
+    --accent:#111111;--blue-50:#F0F0F0;--white:#fff;--bg:#F6F6F7;--border:#E6E6E6;--muted:#6B6B6B;
     --maxw:1140px;--shadow-sm:0 1px 2px rgba(17,17,17,.05);--shadow:0 1px 2px rgba(17,17,17,.04),0 14px 36px rgba(17,17,17,.08);
   }
   *{box-sizing:border-box;margin:0;padding:0}
@@ -31,7 +31,7 @@
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
   .eyebrow{font-family:'Garet','Sora';font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--accent)}
   .btn{display:inline-flex;align-items:center;gap:8px;font-family:'Garet','Sora';font-weight:600;font-size:15px;border-radius:11px;padding:13px 22px;border:1px solid transparent;cursor:pointer;transition:.18s}
-  .btn-accent{background:var(--accent);color:#fff}.btn-accent:hover{filter:brightness(.94);transform:translateY(-1px)}
+  .btn-accent{background:var(--accent);color:#fff}.btn-accent:hover{background:#333;transform:translateY(-1px)}
   .btn-light{background:#fff;color:var(--blue);border-color:var(--border)}.btn-light:hover{background:var(--bg)}
   .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.4)}.btn-ghost:hover{background:rgba(255,255,255,.08)}
 
@@ -39,22 +39,24 @@
   header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
   .nav-in{display:flex;align-items:center;justify-content:space-between;height:68px;max-width:var(--maxw);margin:0 auto;padding:0 28px}
   .brand{display:flex;align-items:center;gap:11px}
-  .brand img{height:30px}
+  .brand img{height:36px}
   .brand span{font-family:'Garet','Sora';font-weight:500;font-size:19px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink)}
   .nav-links{display:flex;align-items:center;gap:26px;font-size:14.5px;font-weight:500}
   .nav-links a{color:var(--graphite)}.nav-links a:hover{color:var(--ink)}
+  .nav-links a.btn-accent{color:#fff}
   @media(max-width:860px){.nav-links a:not(.btn){display:none}}
 
   /* hero */
   .hero{position:relative;overflow:hidden;background:var(--blue);color:#fff;padding:120px 0 108px}
-  .hero:after{content:"";position:absolute;inset:0;background:radial-gradient(900px 460px at 86% -10%,rgba(45,108,223,.32),transparent 60%);pointer-events:none}
+  .hero:after{content:"";position:absolute;inset:0;background:radial-gradient(900px 460px at 86% -10%,rgba(255,255,255,.06),transparent 60%);pointer-events:none}
   .hero>.wrap{position:relative;z-index:1}
-  .hero img.petal{position:absolute;right:-40px;bottom:-90px;width:440px;opacity:.10;z-index:0}
+  .hero .eyebrow{color:#bdbdbd}
+  .hero img.petal{position:absolute;right:-40px;bottom:-90px;width:440px;opacity:.08;z-index:0}
   .hero h1{color:#fff;font-size:clamp(2.7rem,7vw,5rem);font-weight:800;letter-spacing:-.035em;margin:18px 0 0}
-  .hero p.sub{color:#cad7e7;font-size:1.2rem;max-width:60ch;margin-top:22px}
+  .hero p.sub{color:#c6c6c6;font-size:1.2rem;max-width:60ch;margin-top:22px}
   .hero .cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
   .chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:40px;border-top:1px solid rgba(255,255,255,.14);padding-top:24px}
-  .chip{font-size:12.5px;color:#bcd; background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);padding:7px 13px;border-radius:999px}
+  .chip{font-size:12.5px;color:#cfcfcf; background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);padding:7px 13px;border-radius:999px}
 
   /* sections */
   section.block{padding:92px 0}
@@ -101,11 +103,11 @@
   .ctaband .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;position:relative;z-index:1}
 
   /* footer */
-  footer{background:var(--blue);color:#a9bbd0;padding:56px 0 40px}
+  footer{background:var(--ink);color:#b0b0b0;padding:56px 0 40px}
   footer .brand span{color:#fff}
   footer .cols{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;margin-bottom:30px}
   footer h4{color:#fff;font-family:'Garet','Sora';font-size:14px;margin-bottom:10px}
-  footer a{color:#a9bbd0;display:block;font-size:14px;padding:3px 0}
+  footer a{color:#b0b0b0;display:block;font-size:14px;padding:3px 0}
   footer a:hover{color:#fff}
   .foot-bottom{border-top:1px solid rgba(255,255,255,.14);padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:13px}
   .tagline{font-family:'Garet','Sora';letter-spacing:.06em}
@@ -123,7 +125,7 @@
 <!-- NAV -->
 <header class="nav">
   <div class="nav-in">
-    <a class="brand" href="#top"><img src="assets/lotus-symbol-black.png" alt="Lotus"><span>Lotus</span></a>
+    <a class="brand" href="#top"><img src="assets/lotus-symbol.svg" alt="Lotus"><span>Lotus</span></a>
     <nav class="nav-links">
       <a href="#servicos">Serviços</a>
       <a href="#processo">Como trabalhamos</a>
@@ -141,7 +143,7 @@
     <h1>Do caos<br>à clareza.</h1>
     <p class="sub">A Lotus tira a operação da sua pequena ou média empresa do caos de planilhas, controles manuais e sistemas que não conversam — e a coloca em clareza. Tecnologia de ponta em linguagem humana.</p>
     <div class="cta">
-      <a class="btn btn-accent" href="#contato">Fale com a Lotus</a>
+      <a class="btn btn-light" href="#contato">Fale com a Lotus</a>
       <a class="btn btn-ghost" href="#servicos">Ver serviços</a>
     </div>
     <div class="chips">
@@ -256,12 +258,12 @@
   <div class="wrap">
     <div class="ctaband">
       <img class="petal" src="assets/lotus-symbol-white.png" alt="">
-      <p class="eyebrow" style="color:#7FA8F0">Vamos conversar</p>
+      <p class="eyebrow" style="color:#b5b5b5">Vamos conversar</p>
       <h2>Pronto para tirar sua operação do caos?</h2>
-      <p>Conte o seu desafio. Em uma conversa rápida, mostramos por onde começar a trazer clareza para o seu negócio.</p>
+      <p style="color:#c2c2c2">Conte o seu desafio. Em uma conversa rápida, mostramos por onde começar a trazer clareza para o seu negócio.</p>
       <div class="cta">
-        <a class="btn btn-accent" href="mailto:eduardo.carvalho@aol.com?subject=Quero%20falar%20com%20a%20Lotus">Enviar e-mail</a>
-        <a class="btn btn-light" href="https://wa.me/5511994755756" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn-light" href="mailto:eduardo.carvalho@aol.com?subject=Quero%20falar%20com%20a%20Lotus">Enviar e-mail</a>
+        <a class="btn btn-ghost" href="https://wa.me/5511994755756" target="_blank" rel="noopener">WhatsApp</a>
       </div>
     </div>
   </div>
@@ -272,7 +274,7 @@
   <div class="wrap">
     <div class="cols">
       <div style="max-width:280px">
-        <a class="brand" href="#top" style="margin-bottom:12px"><img src="assets/lotus-symbol-white.png" alt="Lotus" style="height:28px"><span>Lotus</span></a>
+        <a class="brand" href="#top" style="margin-bottom:12px"><img src="assets/lotus-symbol-white.svg" alt="Lotus" style="height:32px"><span>Lotus</span></a>
         <p style="font-size:14px">Consultoria de sistemas, processos e IA para pequenas e médias empresas.</p>
       </div>
       <div>
