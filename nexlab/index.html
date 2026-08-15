@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NexLab — Sistema para Laboratórios de Prótese Dentária | Lotus</title>
+<meta name="description" content="NexLab, o ERP da Lotus para laboratórios de prótese dentária: Ordens de Serviço, financeiro completo, tabela de preços por cliente/parceiro e PDF automático — simples de usar, mesmo por quem nunca usou um sistema.">
+<meta property="og:title" content="NexLab — o sistema do seu laboratório de próteses">
+<meta property="og:description" content="Solução Lotus: Ordens de Serviço, financeiro e tabela de preços num sistema só, feito pra quem não é de tecnologia.">
+<meta property="og:type" content="website">
+<link rel="icon" href="/assets/lotus-symbol-black.png">
+<link rel="apple-touch-icon" href="/assets/lotus-symbol-black.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  /* Garet — fonte oficial da marca (local() se instalada; Sora como fallback). */
+  @font-face{font-family:'Garet';src:local('Garet'),local('Garet Book'),url('/assets/fonts/Garet-Book.woff2') format('woff2');font-weight:400;font-display:swap}
+  @font-face{font-family:'Garet';src:local('Garet Medium'),url('/assets/fonts/Garet-Medium.woff2') format('woff2');font-weight:500;font-display:swap}
+  @font-face{font-family:'Garet';src:local('Garet Heavy'),local('Garet Bold'),url('/assets/fonts/Garet-Heavy.woff2') format('woff2');font-weight:600 800;font-display:swap}
+  :root{
+    --ink:#111111;--graphite:#4A4A4A;--blue:#111111;--blue-700:#000000;
+    --accent:#111111;--blue-50:#F0F0F0;--white:#fff;--bg:#F6F6F7;--border:#E6E6E6;--muted:#6B6B6B;
+    --maxw:1140px;--shadow-sm:0 1px 2px rgba(17,17,17,.05);--shadow:0 1px 2px rgba(17,17,17,.04),0 14px 36px rgba(17,17,17,.08);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Garet','Inter',system-ui,'Segoe UI',sans-serif;color:var(--ink);background:var(--white);line-height:1.62;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:'Garet','Sora',sans-serif;line-height:1.12;letter-spacing:-.02em;color:var(--ink)}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+  .eyebrow{font-family:'Garet','Sora';font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--accent)}
+  .btn{display:inline-flex;align-items:center;gap:8px;font-family:'Garet','Sora';font-weight:600;font-size:15px;border-radius:11px;padding:13px 22px;border:1px solid transparent;cursor:pointer;transition:.18s}
+  .btn-accent{background:var(--accent);color:#fff}.btn-accent:hover{background:#333;transform:translateY(-1px)}
+  .btn-light{background:#fff;color:var(--blue);border-color:var(--border)}.btn-light:hover{background:var(--bg)}
+  .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.4)}.btn-ghost:hover{background:rgba(255,255,255,.08)}
+
+  /* nav */
+  header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:68px;max-width:var(--maxw);margin:0 auto;padding:0 28px}
+  .brand{display:flex;align-items:center;gap:11px}
+  .brand img{height:36px}
+  .brand span{font-family:'Garet','Sora';font-weight:500;font-size:19px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink)}
+  .nav-links{display:flex;align-items:center;gap:26px;font-size:14.5px;font-weight:500}
+  .nav-links a{color:var(--graphite)}.nav-links a:hover{color:var(--ink)}
+  .nav-links a.btn-accent{color:#fff}
+  @media(max-width:860px){.nav-links a:not(.btn){display:none}}
+
+  /* hero */
+  .hero{position:relative;overflow:hidden;background:var(--blue);color:#fff;padding:120px 0 108px}
+  .hero:after{content:"";position:absolute;inset:0;background:radial-gradient(900px 460px at 86% -10%,rgba(255,255,255,.06),transparent 60%);pointer-events:none}
+  .hero>.wrap{position:relative;z-index:1}
+  .hero .eyebrow{color:#bdbdbd}
+  .hero img.petal{position:absolute;right:-40px;bottom:-90px;width:440px;opacity:.08;z-index:0}
+  .hero h1{color:#fff;font-size:clamp(2.4rem,6vw,4.2rem);font-weight:800;letter-spacing:-.03em;margin:18px 0 0}
+  .hero p.sub{color:#c6c6c6;font-size:1.2rem;max-width:62ch;margin-top:22px}
+  .hero .cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+
+  /* sections */
+  section.block{padding:92px 0}
+  .sec-head{max-width:64ch;margin-bottom:50px}
+  .sec-head h2{font-size:clamp(1.8rem,3.6vw,2.6rem);margin:12px 0 14px}
+  .sec-head p{color:var(--graphite);font-size:1.1rem}
+
+  /* cards de diferenciais */
+  .grid{display:grid;gap:22px}
+  .g3{grid-template-columns:repeat(3,1fr)}
+  @media(max-width:920px){.g3{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:620px){.g3{grid-template-columns:1fr}}
+  .svc{background:#fff;border:1px solid var(--border);border-radius:18px;padding:30px;box-shadow:var(--shadow-sm);transition:transform .22s,box-shadow .22s}
+  .svc:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+  .svc .ic{width:52px;height:52px;border-radius:14px;background:var(--blue-50);display:grid;place-items:center;margin-bottom:18px}
+  .svc .ic svg{width:26px;height:26px;stroke:var(--blue);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+  .svc h3{font-size:1.18rem;margin-bottom:9px}
+  .svc p{color:var(--graphite);font-size:14.6px}
+
+  /* tecnologia */
+  .tecnologia{background:var(--bg)}
+  .chips-light{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+  .chip-light{font-size:12.5px;color:var(--graphite);background:#fff;border:1px solid var(--border);padding:7px 13px;border-radius:999px}
+
+  /* formulário de lead */
+  .form-card{background:#fff;border:1px solid var(--border);border-radius:24px;padding:44px;box-shadow:var(--shadow-sm)}
+  .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:8px}
+  @media(max-width:680px){.form-grid{grid-template-columns:1fr}}
+  .form-grid .full{grid-column:1/-1}
+  .field label{display:block;font-size:13px;font-weight:600;color:var(--ink);margin-bottom:7px;font-family:'Garet','Sora'}
+  .field label .opt{font-weight:400;color:var(--muted)}
+  .field input,.field select,.field textarea{width:100%;font-family:'Inter',sans-serif;font-size:14.5px;color:var(--ink);background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:12px 14px;transition:.15s}
+  .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--accent);background:#fff}
+  .field textarea{resize:vertical;min-height:88px;font-family:'Inter',sans-serif}
+  .form-foot{display:flex;align-items:center;gap:16px;margin-top:26px;flex-wrap:wrap}
+  .form-msg{font-size:14px;padding:12px 16px;border-radius:10px;display:none;margin-top:20px}
+  .form-msg.show{display:block}
+  .form-msg.ok{background:#EAF7EE;color:#1E6B34;border:1px solid #BFE6C9}
+  .form-msg.err{background:#FDECEC;color:#B3261E;border:1px solid #F3C6C4}
+
+  /* footer */
+  footer{background:var(--ink);color:#b0b0b0;padding:56px 0 40px}
+  footer .brand span{color:#fff}
+  footer .cols{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;margin-bottom:30px}
+  footer h4{color:#fff;font-family:'Garet','Sora';font-size:14px;margin-bottom:10px}
+  footer a{color:#b0b0b0;display:block;font-size:14px;padding:3px 0}
+  footer a:hover{color:#fff}
+  .foot-bottom{border-top:1px solid rgba(255,255,255,.14);padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:13px}
+  .tagline{font-family:'Garet','Sora';letter-spacing:.06em}
+
+  @media(max-width:680px){
+    .wrap{padding:0 18px}
+    .hero{padding:92px 0 76px}
+    section.block{padding:64px 0}
+    .form-card{padding:26px}
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="/"><img src="/assets/lotus-symbol.svg" alt="Lotus"><span>Lotus</span></a>
+    <nav class="nav-links">
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#tecnologia">Tecnologia</a>
+      <a href="/">Institucional</a>
+      <a class="btn btn-accent" href="#form">Avaliar meu laboratório</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <img class="petal" src="/assets/lotus-symbol-white.png" alt="">
+  <div class="wrap">
+    <p class="eyebrow">Solução Lotus</p>
+    <h1>NexLab: o sistema<br>do seu laboratório.</h1>
+    <p class="sub">Ordens de Serviço, financeiro e tabela de preços por cliente e parceiro — tudo num sistema só, simples de usar mesmo por quem nunca usou um sistema antes. Chega de planilha, papel e WhatsApp pra controlar a operação.</p>
+    <div class="cta">
+      <a class="btn btn-light" href="#form">Avaliar meu laboratório</a>
+      <a class="btn btn-ghost" href="#diferenciais">Ver diferenciais</a>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section class="block" id="diferenciais">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Por que o NexLab</p>
+      <h2>Feito pra rotina real de um laboratório de próteses</h2>
+      <p>Cada tela resolve um problema concreto de quem administra ordens de serviço, financeiro e relacionamento com clientes e parceiros.</p>
+    </div>
+    <div class="grid g3">
+      <div class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="7" height="16" rx="1.5"/><rect x="14" y="4" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="6" rx="1.5"/></svg></div>
+        <h3>Ordens de Serviço em Kanban ou Lista</h3>
+        <p>Acompanhe cada prótese do recebimento à entrega, com alerta visual de prazo — uma OS pode ter vários serviços, cada um com cor, arco e valor próprios.</p>
+      </div>
+      <div class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 12h4l2.5-7L14 19l2.5-7H21"/></svg></div>
+        <h3>Financeiro completo</h3>
+        <p>Contas a Receber automáticas, comissão de Parceiros calculada sozinha e fechamento mensal do laboratório — sem planilha paralela pra bater os números.</p>
+      </div>
+      <div class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M4 19V5a2 2 0 0 1 2-2h9l5 5v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"/><path d="M14 3v5h5"/></svg></div>
+        <h3>Tabela de preços por cliente e parceiro</h3>
+        <p>Cada dentista ou laboratório parceiro tem sua própria tabela negociada — nada de percentual genérico que não bate com a realidade do seu negócio.</p>
+      </div>
+      <div class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M8 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6h-4Z"/><path d="M9 13h6M9 17h6"/></svg></div>
+        <h3>PDF automático de tudo</h3>
+        <p>Ordem de Serviço, Relatório de Fechamento pro Cliente/Parceiro e canhotos pra imprimir e recortar — gerados na hora, sem digitar de novo em lugar nenhum.</p>
+      </div>
+      <div class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2 4 6v6c0 5 3.4 8.4 8 10 4.6-1.6 8-5 8-10V6l-8-4Z"/></svg></div>
+        <h3>Dados de cada laboratório isolados</h3>
+        <p>Sistema multi-cliente: o que é do seu laboratório só o seu laboratório vê — nunca se mistura com o de outro cliente da Lotus, nem por engano.</p>
+      </div>
+      <div class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5Z"/></svg></div>
+        <h3>Feito para quem não é de tecnologia</h3>
+        <p>Interface em português direto, sem jargão técnico — se dá pra usar o WhatsApp, dá pra usar o NexLab, no balcão do laboratório ou no celular.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TECNOLOGIA -->
+<section class="block tecnologia" id="tecnologia">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Tecnologia embarcada</p>
+      <h2>Tecnologia de ponta, sem complicar o seu dia</h2>
+      <p>Por trás da simplicidade da tela, o NexLab roda sobre a mesma base de nuvem usada por sistemas de grande porte — você só sente o resultado: sempre no ar, sempre seguro.</p>
+    </div>
+    <div class="chips-light">
+      <span class="chip-light">Acesso de qualquer lugar, 24h, sem instalar nada</span>
+      <span class="chip-light">Funciona no computador e no celular</span>
+      <span class="chip-light">Nuvem segura, com backup automático</span>
+      <span class="chip-light">Login individual por usuário, com permissões</span>
+      <span class="chip-light">Atualizações contínuas, sem custo extra</span>
+      <span class="chip-light">Dados de cada laboratório 100% isolados dos demais</span>
+    </div>
+  </div>
+</section>
+
+<!-- FORMULÁRIO -->
+<section class="block" id="form" style="border-top:1px solid var(--border)">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Vamos avaliar seu laboratório</p>
+      <h2>Conte sobre o seu laboratório</h2>
+      <p>Preencha os dados abaixo — a Lotus avalia a viabilidade da implementação e retorna com uma proposta e os próximos passos da assinatura.</p>
+    </div>
+
+    <form class="form-card" id="form-nexlab">
+      <input type="hidden" name="access_key" value="aab7c798-1263-4dc5-904e-901251aa1800">
+      <input type="hidden" name="subject" value="Novo lead NexLab — site da Lotus">
+      <input type="hidden" name="from_name" value="Landing page Lotus · NexLab">
+      <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+      <div class="form-grid">
+        <div class="field">
+          <label for="nf-nome">Nome completo do responsável</label>
+          <input id="nf-nome" name="nome_responsavel" type="text" required>
+        </div>
+        <div class="field">
+          <label for="nf-lab">Nome do laboratório</label>
+          <input id="nf-lab" name="nome_laboratorio" type="text" required>
+        </div>
+        <div class="field">
+          <label for="nf-doc">CNPJ ou CPF</label>
+          <input id="nf-doc" name="cnpj_cpf" type="text" required>
+        </div>
+        <div class="field">
+          <label for="nf-email">E-mail</label>
+          <input id="nf-email" name="email" type="email" required>
+        </div>
+        <div class="field">
+          <label for="nf-tel">WhatsApp / Telefone</label>
+          <input id="nf-tel" name="telefone" type="tel" required>
+        </div>
+        <div class="field">
+          <label for="nf-tamanho">Tamanho do laboratório</label>
+          <select id="nf-tamanho" name="tamanho_laboratorio" required>
+            <option value="" disabled selected>Selecione</option>
+            <option>Até 5 funcionários</option>
+            <option>6 a 15 funcionários</option>
+            <option>16 a 30 funcionários</option>
+            <option>Mais de 30 funcionários</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="nf-faturamento">Faturamento anual</label>
+          <select id="nf-faturamento" name="faturamento_anual" required>
+            <option value="" disabled selected>Selecione</option>
+            <option>Até R$ 360 mil</option>
+            <option>R$ 360 mil a R$ 1 milhão</option>
+            <option>R$ 1 milhão a R$ 4,8 milhões</option>
+            <option>Acima de R$ 4,8 milhões</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="nf-social">Perfil nas redes sociais / site <span class="opt">(opcional)</span></label>
+          <input id="nf-social" name="redes_sociais" type="text" placeholder="@seulaboratorio ou site">
+        </div>
+        <div class="field full">
+          <label for="nf-obs">Conte mais sobre o laboratório <span class="opt">(opcional)</span></label>
+          <textarea id="nf-obs" name="observacoes" placeholder="Como vocês controlam as OS e o financeiro hoje?"></textarea>
+        </div>
+      </div>
+
+      <div class="form-foot">
+        <button class="btn btn-accent" type="submit" id="form-nexlab-btn">Enviar e avaliar meu laboratório</button>
+        <span class="note" style="font-size:13px;color:var(--muted)">Sem compromisso — a Lotus retorna com uma proposta.</span>
+      </div>
+
+      <p class="form-msg ok" id="form-nexlab-ok">Recebemos seus dados! A Lotus entra em contato em breve.</p>
+      <p class="form-msg err" id="form-nexlab-err">Não deu pra enviar agora. Tenta de novo em instantes ou chama no <a href="https://wa.me/5511994755756" target="_blank" rel="noopener" style="text-decoration:underline">WhatsApp</a>.</p>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div style="max-width:280px">
+        <a class="brand" href="/" style="margin-bottom:12px"><img src="/assets/lotus-symbol-white.svg" alt="Lotus" style="height:32px"><span>Lotus</span></a>
+        <p style="font-size:14px">Consultoria de sistemas, processos e IA para pequenas e médias empresas.</p>
+      </div>
+      <div>
+        <h4>NexLab</h4>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#tecnologia">Tecnologia</a>
+        <a href="#form">Avaliar meu laboratório</a>
+        <a href="https://nexlab.lotusnegocios.com" target="_blank" rel="noopener">Ver o sistema ao vivo</a>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <a href="mailto:eduardo.carvalho@aol.com">eduardo.carvalho@aol.com</a>
+        <a href="https://wa.me/5511994755756" target="_blank" rel="noopener">WhatsApp · (11) 99475-5756</a>
+        <a href="https://www.linkedin.com/company/lotus-consult-br" target="_blank" rel="noopener">LinkedIn da Lotus</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Lotus Negócios LTDA · CNPJ 45.537.878/0001-07</span>
+      <span class="tagline">Do caos à clareza.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var form = document.getElementById('form-nexlab');
+  if (!form) return;
+  var btn = document.getElementById('form-nexlab-btn');
+  var ok = document.getElementById('form-nexlab-ok');
+  var err = document.getElementById('form-nexlab-err');
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    ok.classList.remove('show');
+    err.classList.remove('show');
+    btn.disabled = true;
+    var textoOriginal = btn.textContent;
+    btn.textContent = 'Enviando...';
+
+    try {
+      var dados = new FormData(form);
+      var resposta = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { Accept: 'application/json' },
+        body: dados,
+      });
+      var resultado = await resposta.json();
+      if (resultado.success) {
+        ok.classList.add('show');
+        form.reset();
+      } else {
+        err.classList.add('show');
+      }
+    } catch (erro) {
+      err.classList.add('show');
+    } finally {
+      btn.disabled = false;
+      btn.textContent = textoOriginal;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
