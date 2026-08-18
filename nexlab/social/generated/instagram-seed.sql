@@ -19,7 +19,7 @@ Neste carrossel, reunimos 5 sinais de que chegou a hora de centralizar a gestão
 
 Quantos deles aparecem hoje na sua rotina? Salve para revisar com a equipe.
 
-#GestaoDeLaboratorio #LaboratorioProtético #OrdemDeServico #ProteseDentaria #NexLab', 'Carrossel NexLab: 5 sinais de que o laboratório depende demais da memória', 'carousel', array['https://lotusnegocios.com/nexlab/social/generated/02-sinais-gestao-01.jpg', 'https://lotusnegocios.com/nexlab/social/generated/02-sinais-gestao-02.jpg', 'https://lotusnegocios.com/nexlab/social/generated/02-sinais-gestao-03.jpg', 'https://lotusnegocios.com/nexlab/social/generated/02-sinais-gestao-04.jpg', 'https://lotusnegocios.com/nexlab/social/generated/02-sinais-gestao-05.jpg', 'https://lotusnegocios.com/nexlab/social/generated/02-sinais-gestao-06.jpg']::text[], '2026-08-19T19:30:00Z'::timestamptz, 'scheduled'),
+#GestaoDeLaboratorio #LaboratorioProtético #OrdemDeServico #ProteseDentaria #NexLab', 'Carrossel NexLab: 5 sinais de que o laboratório depende demais da memória', 'carousel', array['https://lotusnegocios.com/nexlab/social/generated/02-sinais-gestao-01.jpg', 'https://lotusnegocios.com/nexlab/social/generated/02-sinais-gestao-02.jpg', 'https://lotusnegocios.com/nexlab/social/generated/02-sinais-gestao-03.jpg', 'https://lotusnegocios.com/nexlab/social/generated/02-sinais-gestao-04.jpg', 'https://lotusnegocios.com/nexlab/social/generated/02-sinais-gestao-05.jpg', 'https://lotusnegocios.com/nexlab/social/generated/02-sinais-gestao-06.jpg']::text[], '2026-08-19T15:30:00Z'::timestamptz, 'scheduled'),
   ('03-os-kanban', 'Recebido. Em produção. Pronto. Entregue.
 
 No NexLab, cada Ordem de Serviço acompanha o fluxo do laboratório em uma visão que a equipe entende rapidamente. Você pode trabalhar em Kanban ou lista, registrar prazos, serviços, cor, arco e valores sem espalhar a informação.
@@ -28,14 +28,14 @@ Menos procura. Mais clareza sobre o próximo passo.
 
 Explore a demonstração pelo link da bio.
 
-#OrdemDeServico #Kanban #LaboratorioDeProtese #GestaoDeProducao #NexLab', 'Da entrada à entrega, cada trabalho no lugar certo. Kanban e lista para acompanhar a produção sem perder o prazo.', 'image', array['https://lotusnegocios.com/nexlab/social/generated/03-os-kanban-01.jpg']::text[], '2026-08-20T19:30:00Z'::timestamptz, 'scheduled'),
+#OrdemDeServico #Kanban #LaboratorioDeProtese #GestaoDeProducao #NexLab', 'Da entrada à entrega, cada trabalho no lugar certo. Kanban e lista para acompanhar a produção sem perder o prazo.', 'image', array['https://lotusnegocios.com/nexlab/social/generated/03-os-kanban-01.jpg']::text[], '2026-08-20T15:30:00Z'::timestamptz, 'scheduled'),
   ('04-os-bem-feita', 'Uma OS bem preenchida reduz dúvidas no meio da produção.
 
 Antes de liberar o trabalho, confira: cliente ou parceiro, paciente, serviço, cor, arco, prazo e valor combinado. Parece básico — e justamente por isso precisa virar padrão.
 
 Salve este checklist e compartilhe com quem recebe os trabalhos no laboratório.
 
-#OrdemDeServico #Protético #LaboratorioProtético #GestaoDeProcessos #NexLab', 'Carrossel NexLab: O que uma boa Ordem de Serviço precisa ter?', 'carousel', array['https://lotusnegocios.com/nexlab/social/generated/04-os-bem-feita-01.jpg', 'https://lotusnegocios.com/nexlab/social/generated/04-os-bem-feita-02.jpg', 'https://lotusnegocios.com/nexlab/social/generated/04-os-bem-feita-03.jpg', 'https://lotusnegocios.com/nexlab/social/generated/04-os-bem-feita-04.jpg', 'https://lotusnegocios.com/nexlab/social/generated/04-os-bem-feita-05.jpg']::text[], '2026-08-21T19:30:00Z'::timestamptz, 'scheduled'),
+#OrdemDeServico #Protético #LaboratorioProtético #GestaoDeProcessos #NexLab', 'Carrossel NexLab: O que uma boa Ordem de Serviço precisa ter?', 'carousel', array['https://lotusnegocios.com/nexlab/social/generated/04-os-bem-feita-01.jpg', 'https://lotusnegocios.com/nexlab/social/generated/04-os-bem-feita-02.jpg', 'https://lotusnegocios.com/nexlab/social/generated/04-os-bem-feita-03.jpg', 'https://lotusnegocios.com/nexlab/social/generated/04-os-bem-feita-04.jpg', 'https://lotusnegocios.com/nexlab/social/generated/04-os-bem-feita-05.jpg']::text[], '2026-08-21T15:30:00Z'::timestamptz, 'scheduled'),
   ('05-personalizavel', 'O NexLab se adapta ao seu laboratório — e não o contrário.
 
 Além da configuração inicial, do treinamento e do suporte de uso, cada laboratório pode solicitar até 5 modificações por semestre para aproximar o sistema da sua realidade.
@@ -44,7 +44,7 @@ Toda solicitação passa por análise de viabilidade e validação técnica. Ass
 
 Quer entender como isso funcionaria no seu laboratório? Fale com a Lotus pelo link da bio.
 
-#NexLab #SistemaPersonalizado #LaboratorioDeProtese #SoftwareDeGestao #ProteseDentaria', 'Carrossel NexLab: Seu processo. Seu jeito de trabalhar.', 'carousel', array['https://lotusnegocios.com/nexlab/social/generated/05-personalizavel-01.jpg', 'https://lotusnegocios.com/nexlab/social/generated/05-personalizavel-02.jpg', 'https://lotusnegocios.com/nexlab/social/generated/05-personalizavel-03.jpg', 'https://lotusnegocios.com/nexlab/social/generated/05-personalizavel-04.jpg', 'https://lotusnegocios.com/nexlab/social/generated/05-personalizavel-05.jpg', 'https://lotusnegocios.com/nexlab/social/generated/05-personalizavel-06.jpg']::text[], '2026-08-22T19:30:00Z'::timestamptz, 'scheduled'),
+#NexLab #SistemaPersonalizado #LaboratorioDeProtese #SoftwareDeGestao #ProteseDentaria', 'Carrossel NexLab: Seu processo. Seu jeito de trabalhar.', 'carousel', array['https://lotusnegocios.com/nexlab/social/generated/05-personalizavel-01.jpg', 'https://lotusnegocios.com/nexlab/social/generated/05-personalizavel-02.jpg', 'https://lotusnegocios.com/nexlab/social/generated/05-personalizavel-03.jpg', 'https://lotusnegocios.com/nexlab/social/generated/05-personalizavel-04.jpg', 'https://lotusnegocios.com/nexlab/social/generated/05-personalizavel-05.jpg', 'https://lotusnegocios.com/nexlab/social/generated/05-personalizavel-06.jpg']::text[], '2026-08-22T13:30:00Z'::timestamptz, 'scheduled'),
   ('06-financeiro', 'O trabalho foi entregue. E o recebimento?
 
 No NexLab, a informação financeira nasce da própria Ordem de Serviço. Isso ajuda a acompanhar contas a receber, baixas, despesas e fechamentos sem redigitar o mesmo serviço em controles diferentes.
@@ -53,7 +53,7 @@ Produção e financeiro olhando para a mesma operação.
 
 Veja o sistema por dentro no link da bio.
 
-#Financeiro #GestaoDeLaboratorio #LaboratorioDeProtese #FluxoDeCaixa #NexLab', 'A OS não termina na entrega. Produção e recebimento conectados para uma visão mais confiável.', 'image', array['https://lotusnegocios.com/nexlab/social/generated/06-financeiro-01.jpg']::text[], '2026-08-23T19:30:00Z'::timestamptz, 'scheduled'),
+#Financeiro #GestaoDeLaboratorio #LaboratorioDeProtese #FluxoDeCaixa #NexLab', 'A OS não termina na entrega. Produção e recebimento conectados para uma visão mais confiável.', 'image', array['https://lotusnegocios.com/nexlab/social/generated/06-financeiro-01.jpg']::text[], '2026-08-23T21:30:00Z'::timestamptz, 'scheduled'),
   ('07-fluxo-claro', 'Um fluxo claro não precisa ter dezenas de etapas. Precisa deixar o próximo passo visível.
 
 Uma base possível: receber e conferir, planejar o prazo, produzir com status atualizado e entregar com registro.
@@ -62,7 +62,7 @@ A partir daí, o laboratório adapta responsáveis e detalhes à própria realid
 
 Qual etapa mais gera ruído hoje por aí?
 
-#GestaoDeProcessos #LaboratorioProtético #Producao #Protético #NexLab', 'Carrossel NexLab: 4 etapas para uma rotina mais visível', 'carousel', array['https://lotusnegocios.com/nexlab/social/generated/07-fluxo-claro-01.jpg', 'https://lotusnegocios.com/nexlab/social/generated/07-fluxo-claro-02.jpg', 'https://lotusnegocios.com/nexlab/social/generated/07-fluxo-claro-03.jpg', 'https://lotusnegocios.com/nexlab/social/generated/07-fluxo-claro-04.jpg', 'https://lotusnegocios.com/nexlab/social/generated/07-fluxo-claro-05.jpg']::text[], '2026-08-24T19:30:00Z'::timestamptz, 'scheduled'),
+#GestaoDeProcessos #LaboratorioProtético #Producao #Protético #NexLab', 'Carrossel NexLab: 4 etapas para uma rotina mais visível', 'carousel', array['https://lotusnegocios.com/nexlab/social/generated/07-fluxo-claro-01.jpg', 'https://lotusnegocios.com/nexlab/social/generated/07-fluxo-claro-02.jpg', 'https://lotusnegocios.com/nexlab/social/generated/07-fluxo-claro-03.jpg', 'https://lotusnegocios.com/nexlab/social/generated/07-fluxo-claro-04.jpg', 'https://lotusnegocios.com/nexlab/social/generated/07-fluxo-claro-05.jpg']::text[], '2026-08-24T18:00:00Z'::timestamptz, 'scheduled'),
   ('08-precos', 'Nem todo cliente trabalha com a mesma condição — e sua gestão precisa refletir isso.
 
 No NexLab, cada cliente ou parceiro pode ter sua própria tabela de preços por serviço. Ao criar a OS, o valor negociado acompanha o cadastro e reduz a dependência de planilhas ou consultas paralelas.
@@ -76,7 +76,7 @@ A demonstração pública usa dados fictícios e permite conhecer os principais 
 
 Acesse o link da bio e veja o NexLab por dentro.
 
-#NexLab #SistemaParaLaboratorio #LaboratorioDeProtese #ERP #Protético', 'Veja o sistema antes de decidir. Explore os módulos com dados fictícios. Sem instalar nada.', 'image', array['https://lotusnegocios.com/nexlab/social/generated/09-convite-demo-01.jpg']::text[], '2026-08-26T19:30:00Z'::timestamptz, 'scheduled')
+#NexLab #SistemaParaLaboratorio #LaboratorioDeProtese #ERP #Protético', 'Veja o sistema antes de decidir. Explore os módulos com dados fictícios. Sem instalar nada.', 'image', array['https://lotusnegocios.com/nexlab/social/generated/09-convite-demo-01.jpg']::text[], '2026-08-26T22:00:00Z'::timestamptz, 'scheduled')
 on conflict (slug) do update set
   caption = excluded.caption,
   alt_text = excluded.alt_text,
