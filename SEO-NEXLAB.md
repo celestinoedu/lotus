@@ -103,6 +103,19 @@ Trabalho contínuo a partir do segundo mês.
 
 Não comprar backlinks, participar de redes de links ou publicar guest posts genéricos em massa.
 
+## Instagram — lembrança e demanda de marca
+
+O Instagram não é tratado como atalho ou fator direto de posicionamento. Seu papel é aumentar descoberta, confiança e lembrança do nome **NexLab**, levando pessoas qualificadas à landing e estimulando buscas pela marca.
+
+- três publicações semanais no lançamento, equilibrando rotina real, educação prática, produto em contexto e confiança;
+- nome NexLab visível nas peças e nas legendas, sem repetição artificial de palavras-chave;
+- link da bio sempre apontando para a landing canônica;
+- conteúdos úteis que gerem salvamentos e compartilhamentos entre protéticos;
+- dúvidas e comentários reais alimentando novos posts e artigos do site;
+- comparação mensal entre visitas do Instagram, conversões assistidas e consultas de marca no Search Console, sem atribuir causalidade sem evidência.
+
+O pacote editorial inicial e as peças ficam em `nexlab/social/`.
+
 ## Métricas e rotina de acompanhamento
 
 ### Configuração

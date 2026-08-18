@@ -13,6 +13,8 @@ Página única, estática e responsiva, com os 6 serviços da Lotus:
 5. Infraestrutura de Dados
 6. Branding, Marketing e Publicidade
 
+A página institucional também possui a seção **Conheça nossos aplicativos**, que apresenta os produtos próprios da Lotus e direciona para suas páginas dedicadas. O primeiro aplicativo exibido é o NexLab.
+
 ## Estrutura
 
 ```
@@ -44,7 +46,9 @@ Página de produto co-branded Lotus + NexLab, construída com a identidade ofici
 
 O formulário foi reduzido aos dados essenciais para diminuir atrito: responsável, laboratório, WhatsApp, e-mail, tamanho da equipe e desafio principal opcional. O site continua estático; o envio usa o **[Web3Forms](https://web3forms.com)** via `fetch` direto do navegador.
 
-Os arquivos exclusivos da página ficam em `nexlab/assets/`: logos, favicon, pattern, fontes Inter auto-hospedadas, imagem social e screenshots do produto.
+Os arquivos exclusivos da página ficam em `nexlab/assets/`: logos, favicon, pattern, fontes Inter auto-hospedadas, imagem social e screenshots desktop/mobile do produto. A landing troca a apresentação automaticamente conforme o tamanho da tela, sem reduzir uma captura desktop para caber no celular.
+
+A seção `nexlab/social/` contém a estratégia editorial do Instagram, calendário de lançamento, legendas e o gerador das peças 4:5. Os JPEGs públicos em `nexlab/social/generated/` também são a origem de mídia usada pela automação no Supabase.
 
 A chave do Web3Forms já está configurada. Caso o e-mail de destino mude, gere uma nova chave no Web3Forms, atualize o campo `access_key` em `nexlab/index.html` e teste uma submissão em produção.
 

@@ -1,0 +1,114 @@
+[
+  {
+    "slug": "01-manifesto",
+    "scheduledAt": "2026-08-24T15:30:00Z",
+    "pillar": "Marca e confiança",
+    "objective": "Apresentar a marca e fixar a proposta central.",
+    "caption": "Seu laboratório tem um jeito próprio de trabalhar. O sistema de gestão deveria respeitar isso.\n\nO NexLab conecta Ordens de Serviço, clientes, produção, estoque, financeiro e relatórios em uma rotina clara — no computador e no celular.\n\nE a implantação começa entendendo o seu processo, não entregando uma configuração genérica.\n\nConheça o NexLab no link da bio.\n\n#NexLab #LaboratorioDeProtese #ProteseDentaria #GestaoDeLaboratorio #Protético",
+    "slides": [
+      {"eyebrow": "NEXLAB · GESTÃO QUE CONECTA", "title": "O laboratório muda. O sistema acompanha.", "body": "Gestão feita para a rotina de laboratórios de prótese dentária.", "theme": "dark"}
+    ]
+  },
+  {
+    "slug": "02-sinais-gestao",
+    "scheduledAt": "2026-08-26T15:30:00Z",
+    "pillar": "Rotina real",
+    "objective": "Gerar identificação e salvamentos.",
+    "caption": "Quando a operação depende da memória de uma pessoa, o laboratório fica vulnerável a atraso, retrabalho e informação perdida.\n\nNeste carrossel, reunimos 5 sinais de que chegou a hora de centralizar a gestão.\n\nQuantos deles aparecem hoje na sua rotina? Salve para revisar com a equipe.\n\n#GestaoDeLaboratorio #LaboratorioProtético #OrdemDeServico #ProteseDentaria #NexLab",
+    "slides": [
+      {"eyebrow": "CHECKLIST DE GESTÃO", "title": "5 sinais de que o laboratório depende demais da memória", "body": "Deslize e confira.", "theme": "light"},
+      {"eyebrow": "SINAL 01", "title": "O prazo só está anotado no papel ou na conversa", "body": "Sem uma visão central, conferir o que vence hoje vira uma busca.", "theme": "dark"},
+      {"eyebrow": "SINAL 02", "title": "Para saber o status, é preciso perguntar", "body": "A equipe interrompe o trabalho porque a etapa da OS não está visível.", "theme": "light"},
+      {"eyebrow": "SINAL 03", "title": "Produção e financeiro contam histórias diferentes", "body": "O serviço foi entregue, mas o recebimento ainda depende de outro controle.", "theme": "amber"},
+      {"eyebrow": "SINAIS 04 E 05", "title": "Preço espalhado e estoque descoberto", "body": "Tabelas por cliente ficam difíceis de consultar e a falta de insumo aparece tarde demais.", "theme": "dark"},
+      {"eyebrow": "PRÓXIMO PASSO", "title": "Centralizar não é complicar. É enxergar.", "body": "O NexLab conecta a rotina do laboratório em um só lugar. Link na bio.", "theme": "light"}
+    ]
+  },
+  {
+    "slug": "03-os-kanban",
+    "scheduledAt": "2026-08-28T15:30:00Z",
+    "pillar": "Produto em contexto",
+    "objective": "Demonstrar o controle visual das OS.",
+    "caption": "Recebido. Em produção. Pronto. Entregue.\n\nNo NexLab, cada Ordem de Serviço acompanha o fluxo do laboratório em uma visão que a equipe entende rapidamente. Você pode trabalhar em Kanban ou lista, registrar prazos, serviços, cor, arco e valores sem espalhar a informação.\n\nMenos procura. Mais clareza sobre o próximo passo.\n\nExplore a demonstração pelo link da bio.\n\n#OrdemDeServico #Kanban #LaboratorioDeProtese #GestaoDeProducao #NexLab",
+    "slides": [
+      {"eyebrow": "ORDENS DE SERVIÇO", "title": "Da entrada à entrega, cada trabalho no lugar certo.", "body": "Kanban e lista para acompanhar a produção sem perder o prazo.", "theme": "product"}
+    ]
+  },
+  {
+    "slug": "04-os-bem-feita",
+    "scheduledAt": "2026-08-31T15:30:00Z",
+    "pillar": "Educação prática",
+    "objective": "Ensinar um padrão de cadastro de OS e gerar salvamentos.",
+    "caption": "Uma OS bem preenchida reduz dúvidas no meio da produção.\n\nAntes de liberar o trabalho, confira: cliente ou parceiro, paciente, serviço, cor, arco, prazo e valor combinado. Parece básico — e justamente por isso precisa virar padrão.\n\nSalve este checklist e compartilhe com quem recebe os trabalhos no laboratório.\n\n#OrdemDeServico #Protético #LaboratorioProtético #GestaoDeProcessos #NexLab",
+    "slides": [
+      {"eyebrow": "CHECKLIST PRÁTICO", "title": "O que uma boa Ordem de Serviço precisa ter?", "body": "Um padrão simples evita dúvidas durante a produção.", "theme": "light"},
+      {"eyebrow": "IDENTIFICAÇÃO", "title": "Cliente, parceiro e paciente", "body": "A equipe precisa saber de onde veio o trabalho e a quem ele pertence.", "theme": "dark"},
+      {"eyebrow": "ESPECIFICAÇÃO", "title": "Serviço, cor e arco", "body": "Os detalhes técnicos devem viajar com a OS, não ficar em uma conversa separada.", "theme": "amber"},
+      {"eyebrow": "COMPROMISSO", "title": "Prazo e valor combinado", "body": "A data orienta a produção. O valor mantém operação e financeiro alinhados.", "theme": "light"},
+      {"eyebrow": "PADRÃO DE EQUIPE", "title": "A melhor OS é a que todos entendem", "body": "No NexLab, esses dados ficam conectados do recebimento ao financeiro.", "theme": "dark"}
+    ]
+  },
+  {
+    "slug": "05-personalizavel",
+    "scheduledAt": "2026-09-02T15:30:00Z",
+    "pillar": "Marca e confiança",
+    "objective": "Explicar o diferencial de personalização com precisão.",
+    "caption": "O NexLab se adapta ao seu laboratório — e não o contrário.\n\nAlém da configuração inicial, do treinamento e do suporte de uso, cada laboratório pode solicitar até 5 modificações por semestre para aproximar o sistema da sua realidade.\n\nToda solicitação passa por análise de viabilidade e validação técnica. Assim, a evolução respeita a rotina do cliente sem abrir mão da segurança e da estabilidade do produto.\n\nQuer entender como isso funcionaria no seu laboratório? Fale com a Lotus pelo link da bio.\n\n#NexLab #SistemaPersonalizado #LaboratorioDeProtese #SoftwareDeGestao #ProteseDentaria",
+    "slides": [
+      {"eyebrow": "100% PERSONALIZÁVEL*", "title": "Seu processo. Seu jeito de trabalhar.", "body": "O NexLab evolui próximo da realidade do seu laboratório.", "theme": "dark"},
+      {"eyebrow": "COMEÇA OUVINDO", "title": "A implantação parte da sua rotina real", "body": "Entendemos equipe, serviços, preços e controles antes de preparar o ambiente.", "theme": "light"},
+      {"eyebrow": "CONTINUA PRÓXIMO", "title": "Suporte completo para o uso do sistema", "body": "Treinamento e acompanhamento ajudam o NexLab a entrar no dia a dia.", "theme": "amber"},
+      {"eyebrow": "EVOLUÇÃO SOB MEDIDA", "title": "Até 5 solicitações de modificação por semestre", "body": "Cada pedido é analisado conforme necessidade, impacto e viabilidade.", "theme": "light"},
+      {"eyebrow": "QUALIDADE PRIMEIRO", "title": "Toda mudança passa por validação técnica", "body": "Personalizar também é preservar segurança, estabilidade e coerência do produto.", "theme": "dark"},
+      {"eyebrow": "NEXLAB · GESTÃO QUE CONECTA", "title": "Um sistema mais próximo do seu laboratório", "body": "*Política sujeita à análise de viabilidade e validação técnica. Saiba mais no link da bio.", "theme": "light"}
+    ]
+  },
+  {
+    "slug": "06-financeiro",
+    "scheduledAt": "2026-09-04T15:30:00Z",
+    "pillar": "Produto em contexto",
+    "objective": "Conectar operação e visão financeira.",
+    "caption": "O trabalho foi entregue. E o recebimento?\n\nNo NexLab, a informação financeira nasce da própria Ordem de Serviço. Isso ajuda a acompanhar contas a receber, baixas, despesas e fechamentos sem redigitar o mesmo serviço em controles diferentes.\n\nProdução e financeiro olhando para a mesma operação.\n\nVeja o sistema por dentro no link da bio.\n\n#Financeiro #GestaoDeLaboratorio #LaboratorioDeProtese #FluxoDeCaixa #NexLab",
+    "slides": [
+      {"eyebrow": "FINANCEIRO INTEGRADO", "title": "A OS não termina na entrega.", "body": "Produção e recebimento conectados para uma visão mais confiável.", "theme": "product"}
+    ]
+  },
+  {
+    "slug": "07-fluxo-claro",
+    "scheduledAt": "2026-09-07T15:30:00Z",
+    "pillar": "Educação prática",
+    "objective": "Ensinar um fluxo operacional simples.",
+    "caption": "Um fluxo claro não precisa ter dezenas de etapas. Precisa deixar o próximo passo visível.\n\nUma base possível: receber e conferir, planejar o prazo, produzir com status atualizado e entregar com registro.\n\nA partir daí, o laboratório adapta responsáveis e detalhes à própria realidade.\n\nQual etapa mais gera ruído hoje por aí?\n\n#GestaoDeProcessos #LaboratorioProtético #Producao #Protético #NexLab",
+    "slides": [
+      {"eyebrow": "FLUXO DE PRODUÇÃO", "title": "4 etapas para uma rotina mais visível", "body": "Uma base simples para organizar o trabalho.", "theme": "light"},
+      {"eyebrow": "01 · RECEBER", "title": "Confira antes de começar", "body": "Dados do cliente, paciente, serviço, materiais e prazo precisam estar completos.", "theme": "dark"},
+      {"eyebrow": "02 · PLANEJAR", "title": "Transforme prazo em prioridade", "body": "Distribua o trabalho considerando capacidade, dependências e data de entrega.", "theme": "light"},
+      {"eyebrow": "03 · PRODUZIR", "title": "Atualize o status na mudança de etapa", "body": "A informação fica útil quando acompanha o movimento real da bancada.", "theme": "amber"},
+      {"eyebrow": "04 · ENTREGAR", "title": "Registre a conclusão e conecte o financeiro", "body": "Fechar o ciclo evita trabalhos prontos sem baixa ou cobrança acompanhada.", "theme": "dark"}
+    ]
+  },
+  {
+    "slug": "08-precos",
+    "scheduledAt": "2026-09-09T15:30:00Z",
+    "pillar": "Produto em contexto",
+    "objective": "Mostrar tabelas de preços por relacionamento.",
+    "caption": "Nem todo cliente trabalha com a mesma condição — e sua gestão precisa refletir isso.\n\nNo NexLab, cada cliente ou parceiro pode ter sua própria tabela de preços por serviço. Ao criar a OS, o valor negociado acompanha o cadastro e reduz a dependência de planilhas ou consultas paralelas.\n\nMais consistência na entrada. Mais confiança no fechamento.\n\n#TabelaDePrecos #LaboratorioDeProtese #GestaoFinanceira #ProteseDentaria #NexLab",
+    "slides": [
+      {"eyebrow": "PREÇOS POR RELACIONAMENTO", "title": "O mesmo serviço pode ter acordos diferentes", "body": "E isso não deveria depender da memória.", "theme": "light"},
+      {"eyebrow": "NO NEXLAB", "title": "Cada cliente ou parceiro tem sua tabela", "body": "Os preços ficam organizados por serviço e por relacionamento comercial.", "theme": "dark"},
+      {"eyebrow": "NA CRIAÇÃO DA OS", "title": "O valor certo acompanha o trabalho", "body": "Menos consulta paralela e menos risco de usar uma condição desatualizada.", "theme": "amber"},
+      {"eyebrow": "NO FECHAMENTO", "title": "O histórico fica ligado à operação", "body": "A equipe consegue rastrear o que foi produzido e qual valor foi aplicado.", "theme": "light"},
+      {"eyebrow": "GESTÃO QUE CONECTA", "title": "Produção e comercial falando a mesma língua", "body": "Conheça o NexLab no link da bio.", "theme": "dark"}
+    ]
+  },
+  {
+    "slug": "09-convite-demo",
+    "scheduledAt": "2026-09-11T15:30:00Z",
+    "pillar": "Marca e confiança",
+    "objective": "Converter interesse em visita e demonstração.",
+    "caption": "Você não precisa imaginar como o NexLab funciona. Pode explorar.\n\nA demonstração pública usa dados fictícios e permite conhecer os principais módulos no computador ou no celular. Depois, a Lotus apresenta como a configuração e a implantação podem ser aplicadas à realidade do seu laboratório.\n\nAcesse o link da bio e veja o NexLab por dentro.\n\n#NexLab #SistemaParaLaboratorio #LaboratorioDeProtese #ERP #Protético",
+    "slides": [
+      {"eyebrow": "DEMONSTRAÇÃO NEXLAB", "title": "Veja o sistema antes de decidir.", "body": "Explore os módulos com dados fictícios. Sem instalar nada.", "theme": "dark"}
+    ]
+  }
+]

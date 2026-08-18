@@ -44,7 +44,17 @@
   .nav-links{display:flex;align-items:center;gap:26px;font-size:14.5px;font-weight:500}
   .nav-links a{color:var(--graphite)}.nav-links a:hover{color:var(--ink)}
   .nav-links a.btn-accent{color:#fff}
-  @media(max-width:860px){.nav-links a:not(.btn){display:none}}
+  .menu-button{display:none;width:44px;height:44px;place-items:center;border:1px solid var(--border);border-radius:12px;background:#fff;color:var(--ink);font-size:22px;line-height:1;cursor:pointer}
+  @media(max-width:860px){
+    body.menu-open{overflow:hidden}
+    .nav-in{padding:0 18px}
+    .brand img{height:32px}.brand span{font-size:17px}
+    .menu-button{display:grid}
+    .nav-links{display:none}
+    .nav-links.open{position:fixed;inset:68px 0 auto;display:flex;max-height:calc(100dvh - 68px);flex-direction:column;align-items:stretch;gap:0;overflow-y:auto;border-bottom:1px solid var(--border);background:#fff;padding:14px 18px 22px;box-shadow:0 18px 34px rgba(17,17,17,.12)}
+    .nav-links.open a{display:flex;min-height:50px;align-items:center;border-bottom:1px solid var(--border);padding:0 4px;color:var(--ink)}
+    .nav-links.open a.btn-accent{min-height:48px;justify-content:center;margin-top:14px;border-bottom:0;padding:0 18px;color:#fff}
+  }
 
   /* hero */
   .hero{position:relative;overflow:hidden;background:var(--blue);color:#fff;padding:120px 0 108px}
@@ -78,6 +88,20 @@
   .svc .tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
   .svc .tags span{font-size:11.5px;font-weight:600;color:var(--blue);background:var(--blue-50);padding:5px 10px;border-radius:999px;font-family:'Garet','Sora'}
   .svc .n{font-family:'Garet','Sora';font-weight:700;font-size:13px;color:#C7CDD6;float:right}
+
+  /* aplicativos */
+  .apps{background:var(--bg);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+  .app-card{display:grid;grid-template-columns:.72fr 1.28fr;min-height:360px;overflow:hidden;border:1px solid #dcdcdc;border-radius:24px;background:#fff;box-shadow:var(--shadow-sm);transition:transform .22s,box-shadow .22s,border-color .22s}
+  .app-card:hover{transform:translateY(-5px);border-color:#bcbcbc;box-shadow:var(--shadow)}
+  .app-brand{display:grid;place-items:center;padding:54px;background:#ececed}
+  .app-brand img{width:min(100%,330px)}
+  .app-copy{display:flex;flex-direction:column;justify-content:center;padding:48px}
+  .app-copy .status{align-self:flex-start;border-radius:999px;background:#111;color:#fff;padding:6px 10px;font-family:'Garet','Sora';font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+  .app-copy h3{margin:22px 0 12px;font-size:clamp(1.55rem,3vw,2.2rem)}
+  .app-copy p{max-width:58ch;color:var(--graphite)}
+  .app-points{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}.app-points span{border:1px solid var(--border);border-radius:999px;padding:6px 11px;color:var(--graphite);font-size:12px}
+  .app-action{display:flex;align-items:center;gap:9px;margin-top:28px;font-family:'Garet','Sora';font-size:14px;font-weight:600}.app-action span{font-size:20px;transition:transform .2s}.app-card:hover .app-action span{transform:translateX(4px)}
+  @media(max-width:720px){.app-card{grid-template-columns:1fr}.app-brand{min-height:220px;padding:38px}.app-brand img{width:min(100%,260px)}.app-copy{padding:30px 26px 34px}}
 
   /* process */
   .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:s}
@@ -126,8 +150,10 @@
 <header class="nav">
   <div class="nav-in">
     <a class="brand" href="#top"><img src="assets/lotus-symbol.svg" alt="Lotus"><span>Lotus</span></a>
-    <nav class="nav-links">
+    <button class="menu-button" type="button" aria-label="Abrir menu" aria-controls="main-navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" id="main-navigation" aria-label="Navegação principal">
       <a href="#servicos">Serviços</a>
+      <a href="#aplicativos">Aplicativos</a>
       <a href="/nexlab/">NexLab</a>
       <a href="#processo">Como trabalhamos</a>
       <a href="#porque">Por que Lotus</a>
@@ -220,6 +246,27 @@
   </div>
 </section>
 
+<!-- APLICATIVOS -->
+<section class="block apps" id="aplicativos">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Produtos Lotus</p>
+      <h2>Conheça nossos aplicativos</h2>
+      <p>Soluções próprias criadas para transformar rotinas complexas em operações mais claras, conectadas e fáceis de acompanhar.</p>
+    </div>
+    <a class="app-card" href="/nexlab/" aria-label="Conhecer o NexLab, sistema de gestão para laboratórios de prótese dentária">
+      <div class="app-brand"><img src="assets/logo-nexlab-mono-black.svg" alt="NexLab"></div>
+      <div class="app-copy">
+        <span class="status">Aplicativo Lotus</span>
+        <h3>Gestão para laboratórios de prótese dentária</h3>
+        <p>Ordens de Serviço, clientes, produção, estoque, financeiro e relatórios conectados em uma plataforma que se adapta à rotina do laboratório.</p>
+        <div class="app-points"><span>Computador e celular</span><span>Implantação acompanhada</span><span>Personalizável</span></div>
+        <span class="app-action">Conhecer o NexLab <span aria-hidden="true">→</span></span>
+      </div>
+    </a>
+  </div>
+</section>
+
 <!-- PROCESSO -->
 <section class="block" id="processo" style="border-top:1px solid var(--border)">
   <div class="wrap">
@@ -307,6 +354,15 @@
     </div>
   </div>
 </footer>
+
+<script>
+  const menuButton=document.querySelector('.menu-button');
+  const mainNavigation=document.querySelector('.nav-links');
+  const closeMenu=()=>{mainNavigation?.classList.remove('open');document.body.classList.remove('menu-open');menuButton?.setAttribute('aria-expanded','false');if(menuButton)menuButton.textContent='☰'};
+  menuButton?.addEventListener('click',()=>{const open=mainNavigation?.classList.toggle('open')??false;document.body.classList.toggle('menu-open',open);menuButton.setAttribute('aria-expanded',String(open));menuButton.textContent=open?'×':'☰'});
+  mainNavigation?.querySelectorAll('a').forEach(link=>link.addEventListener('click',closeMenu));
+  window.addEventListener('resize',()=>{if(window.innerWidth>860)closeMenu()});
+</script>
 
 </body>
 </html>
