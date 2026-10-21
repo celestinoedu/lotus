@@ -15,18 +15,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
 <style>
-  @property --bg{syntax:'<color>';inherits:true;initial-value:#000}
-  @property --fg{syntax:'<color>';inherits:true;initial-value:#fff}
-  @property --muted{syntax:'<color>';inherits:true;initial-value:rgba(255,255,255,.58)}
-  @property --line{syntax:'<color>';inherits:true;initial-value:rgba(255,255,255,.17)}
-  @property --faint{syntax:'<color>';inherits:true;initial-value:rgba(255,255,255,.08)}
-  @property --tint{syntax:'<color>';inherits:true;initial-value:rgba(255,255,255,.035)}
-  @property --accent{syntax:'<color>';inherits:true;initial-value:#39ff14}
-  @property --inv{syntax:'<number>';inherits:true;initial-value:1}
   :root{--black:#000;--green:#39ff14;--maxw:1280px}
   body,.ctaband{--bg:#000;--fg:#fff;--muted:rgba(255,255,255,.58);--line:rgba(255,255,255,.17);--faint:rgba(255,255,255,.08);--tint:rgba(255,255,255,.035);--accent:#39ff14;--inv:1}
-  body[data-theme="light"]{--bg:#f5f5f3;--fg:#111;--muted:rgba(17,17,17,.62);--line:rgba(17,17,17,.15);--faint:rgba(17,17,17,.08);--tint:rgba(17,17,17,.03);--accent:#177a00;--inv:0}
-  body{transition:--bg 1s ease,--fg 1s ease,--muted 1s ease,--line 1s ease,--faint 1s ease,--tint 1s ease,--accent 1s ease,--inv 1s ease}
+  [data-theme="light"]{--bg:#f5f5f3;--fg:#111;--muted:rgba(17,17,17,.62);--line:rgba(17,17,17,.15);--faint:rgba(17,17,17,.08);--tint:rgba(17,17,17,.03);--accent:#177a00;--inv:0;background:var(--bg);color:var(--fg)}
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth;background:var(--black)}
   body{font-family:'Outfit',sans-serif;color:var(--fg);background:var(--bg);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
@@ -176,7 +167,7 @@
 </header>
 
 <!-- HERO -->
-<section class="hero" id="top" data-theme="dark">
+<section class="hero" id="top">
   <img class="petal" src="assets/lotus-symbol-white.png" alt="">
   <div class="wrap">
     <p class="eyebrow">Sistemas · Processos · IA · para PMEs</p>
@@ -288,7 +279,7 @@
 </section>
 
 <!-- APLICATIVOS -->
-<section class="block apps" id="aplicativos" data-theme="dark">
+<section class="block apps" id="aplicativos">
   <div class="wrap">
     <div class="sec-head">
       <p class="eyebrow">Produtos Lotus</p>
@@ -338,7 +329,7 @@
 </section>
 
 <!-- POR QUE -->
-<section class="block why" id="porque" data-theme="dark">
+<section class="block why" id="porque">
   <div class="wrap">
     <div class="sec-head">
       <p class="eyebrow">Por que Lotus</p>
@@ -371,7 +362,7 @@
 </section>
 
 <!-- FOOTER -->
-<footer data-theme="dark">
+<footer>
   <div class="wrap">
     <div class="cols">
       <div style="max-width:280px">
@@ -463,11 +454,6 @@
     if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}
   }),{threshold:.12,rootMargin:'0px 0px -6%'});
   revealTargets.forEach(element=>observer.observe(element));
-
-  const themeObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{
-    if(entry.isIntersecting)document.body.dataset.theme=entry.target.dataset.theme;
-  }),{rootMargin:'-50% 0px -50% 0px'});
-  document.querySelectorAll('[data-theme]').forEach(element=>{if(element!==document.body)themeObserver.observe(element)});
 
 </script>
 
