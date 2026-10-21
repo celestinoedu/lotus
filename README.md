@@ -4,14 +4,17 @@ Site institucional da **Lotus**, consultoria de sistemas, processos e IA para pe
 
 > **Do caos à clareza.**
 
-Página única, estática e responsiva, com os 6 serviços da Lotus:
+Página única, estática e responsiva, com os 9 serviços da Lotus:
 
-1. Desenvolvimento de Sistemas Low-Code
-2. Consultoria e Treinamentos em Melhoria Contínua
-3. Serviços de Infraestrutura de Redes
-4. Automação RPA
-5. Infraestrutura de Dados
-6. Branding, Marketing e Publicidade
+1. Sistemas de Gestão, CRM e ERP
+2. Automação & IA
+3. Desenvolvimento de Sistemas Low-Code
+4. Infraestrutura de Dados
+5. Criação e Redesign de Websites
+6. Marketing de Performance (tráfego pago)
+7. Branding e Publicidade
+8. Consultoria e Treinamentos em Melhoria Contínua
+9. Serviços de Infraestrutura de Redes
 
 A página institucional também possui a seção **Conheça nossos aplicativos**, que apresenta os produtos próprios da Lotus e direciona para suas páginas dedicadas: **NexLab** (laboratórios de prótese dentária) e **NexWash** (lava-rápidos e estética automotiva).
 
